@@ -19,6 +19,9 @@ export default defineComponent({
   },
 
   computed: {
+    toLocalOpt() {
+      return new Date(this.date).toISOString().substr(0, 10);
+    },
     toLocal() {
       const options = { year: 'numeric', month: 'long', day: 'numeric' };
       return new Date(this.date).toLocaleDateString('en-EN', options);
@@ -37,7 +40,7 @@ export default defineComponent({
       </li>
       <li>
         <img class="icon meetup-info__icon" alt="icon" src="/assets/icons/icon-cal-lg.svg" />
-        <time datetime="2020-01-01">{{ toLocal }}</time>
+        <time :datetime="toLocalOpt">{{ toLocal }}</time>
       </li>
     </ul>`,
 });
