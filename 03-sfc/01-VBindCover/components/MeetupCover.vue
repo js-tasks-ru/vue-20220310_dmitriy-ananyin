@@ -19,7 +19,7 @@ export default {
 
   computed: {
     imageHandler() {
-      return this.image ? `url('${this.image}')` : `var(--default-cover)`;
+      return this.image ? `url('${this.image}')` : 'var(--default-comer)';
     },
   },
 };
@@ -27,7 +27,7 @@ export default {
 
 <style>
 :root {
-  --default-cover: url('https://course-vue.javascript.ru/api/images/2');
+  --default-comer: url('https://course-vue.javascript.ru/api/images/2');
 }
 .meetup-cover {
   background-size: cover;
