@@ -42,7 +42,7 @@ createApp({
   computed: {
     search() {
       const filteredEmails = [];
-      this.emails.filter((email) => {
+      this.emails.map((email) => {
         if (this.searchStr !== '') {
           filteredEmails.push({
             email: email,
