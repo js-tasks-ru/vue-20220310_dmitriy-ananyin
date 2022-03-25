@@ -18,7 +18,7 @@ export default {
   },
 
   computed: {
-    checkImage() {
+    imageHandler() {
       return this.image ? `url('${this.image}')` : `var(--default-cover)`;
     },
   },
