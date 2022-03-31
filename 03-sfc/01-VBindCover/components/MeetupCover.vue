@@ -26,9 +26,6 @@ export default {
 </script>
 
 <style>
-:root {
-  --default-cover: url('https://course-vue.javascript.ru/api/images/2');
-}
 .meetup-cover {
   background-size: cover;
   background-position: center;
