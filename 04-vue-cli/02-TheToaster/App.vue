@@ -14,6 +14,12 @@ export default {
 
   components: { TheToaster },
 
+  data() {
+    return {
+      messages: []
+    }
+  },
+
   methods: {
     success() {
       this.$refs.toaster.success('Success ' + new Date().toLocaleTimeString());
